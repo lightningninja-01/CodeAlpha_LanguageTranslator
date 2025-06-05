@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Language Translator</title>
+  <link rel="stylesheet" href="LTT_1_style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Language Translation Tool 🌐</h1>
+    <textarea id="inputText" placeholder="Enter text..."></textarea>
+
+    <div class="select-group">
+      <select id="sourceLang">
+        <option value="en">English</option>
+        <option value="sp">Spanish</option>
+        <option value="hi">Hindi</option>
+
+      </select>
+
+      <span>➡</span>
+
+      <select id="targetLang">
+        <option value="hi">Hindi</option>
+        <option value="en">English</option>
+        <option value="sp">Spanish</option>
+      </select>
+    </div>
+
+    <button onclick="translateText()">Translate</button>
+
+    <h2>Translated Text:</h2>
+    <div id="outputText"></div>
+
+    <button onclick="copyText()">📋 Copy</button>
+    <button onclick="speakText()">🔊 Speak</button>
+  </div>
+
+  <script src="LTT_1_logic.js"></script>
+</body>
+</html>
